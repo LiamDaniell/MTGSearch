@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles/cardPage.css"
+    />
+	<script src="../scripts/cardPage.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Black+Ops+One"
+      rel="stylesheet"
+    />
+	
+  </head>
+  <body>
+  <nav class="minNav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="advanced.html">Advanced Options</a></li>
+        <li><a href="cardPage.html">Search</a></li>
+        
+      </ul>
+    </nav>
+    <h1 class = "center">Card Search</h1>
+    <form id="advanced-search-form">
+      <div>
+        <label for="card-name" class = "search">Card Name:</label>
+        <input type="text" class = "search" id="name" name="name">
+      </div>
+      
+      
+      <button type="submit" class ="search" ">Search</button>
+    </form>
+    <div id="search-results"></div>
+  </body>
+</html>

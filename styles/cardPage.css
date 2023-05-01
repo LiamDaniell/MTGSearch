@@ -1,0 +1,148 @@
+html {
+  font-family: "Black Ops One", cursive;
+  color: white;
+  background: url(../source/bayou.jpg);
+  background-size: cover;
+}
+
+#homeTitle {
+  display: block;
+  font-size: 4em;
+  width: 75%;
+  height: 25%;
+  margin: 5px auto 15px auto;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: whitesmoke;
+  align-content: center;
+}
+li {
+  display: inline;
+}
+
+li a {
+  display: inline;
+  color: black;
+  text-align: center;
+  size: inherit;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover:not(.active) {
+  color: grey;
+}
+
+.active {
+  background-color: whitesmoke;
+}
+nav {
+  margin: auto auto auto auto;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto 200px 300px 200px auto;
+  grid-template-rows: 50px 75px 150px 100px 200px;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+}
+.text {
+	font-size: 40px;
+}
+.center{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  
+}
+.search {
+  width: 130px;
+  height: 25px;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+}
+
+.searchTerm {
+  float: left;
+  width: 300px;
+  margin-right: 27px;
+  border: 3px solid #070707;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #070707;
+}
+
+.searchTerm:focus {
+  color: #070707;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 80px;
+  height: 36px;
+  border: 1px solid #070707;
+  background: #070707;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font: inherit;
+}
+
+#cImage {
+  width: 75%;
+  height: 75%;
+  text-align: center;
+  transition: 0.3s ease;
+}
+#cImage:hover {
+  transform: scale(1.2, 1.2);
+}
+#imageContainer {
+  text-align: center;
+}
+#cardInfo {
+  align-content: center;
+  align-items: flex-start;
+}
+#cardName {
+  font-size: 1rem;
+  text-align: center;
+  margin: 5px;
+}
+#cardInfoLeft {
+  text-align: center;
+}
+#cardInfoRight {
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 280px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+

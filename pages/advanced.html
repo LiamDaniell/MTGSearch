@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scryfall Card Search</title>
+    <link rel="stylesheet" href="../styles/cardPage.css">
+    <script src="../scripts/advanced.js"></script>
+  </head>
+  <body>
+    <nav class="minNav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="advanced.html">Advanced Options</a></li>
+        <li><a href="cardPage.html">Search</a></li>
+        
+      </ul>
+    </nav>
+    <h1 class = "search">Advanced Card Search</h1>
+    <form id="advanced-search-form">
+      <div>
+        <label for="card-name" class = "search">Card Name:</label>
+        <input type="text" class = "search" id="name" name="name">
+      </div>
+      <div>
+        <label for="oracle-text" class = "search">Card Text:</label>
+        <input type="text" class = "search" id="text" name="card_text">
+      </div>
+      <div>
+        <label for="card-type" class = "search">Card Type:</label>
+<select id="type" name="card_type" class = "search">
+  
+  <option value="">Any</option>
+  <option value="Artifact">Artifact</option>
+  <option value="Conspiracy">Conspiracy</option>
+  <option value="Creature">Creature</option>
+  <option value="Enchantment">Enchantment</option>
+  <option value="Instant">Instant</option>
+  <option value="Land">Land</option>
+  <option value="Phenomenon">Phenomenon</option>
+  <option value="Plane">Plane</option>
+  <option value="Planeswalker">Planeswalker</option>
+  <option value="Scheme">Scheme</option>
+  <option value="Sorcery">Sorcery</option>
+  <option value="Tribal">Tribal</option>
+  <option value="Vanguard">Vanguard</option>
+</select>
+      </div>
+      <div>
+        <label for="cmc" class = "search">Mana Value:</label>
+        <input type="number" class = "search" id="mana" name="mana_value">
+      </div>
+      <div>
+        <label for="color-identity" class = "search">Color Identity:</label>
+       <select name="color" id = "color" class = "search">
+	   
+		<option value="">Any</option>
+		<option value="W">White</option>
+		<option value="U">Blue</option>
+		<option value="B">Black</option>
+		<option value="R">Red</option>
+		<option value="G">Green</option>
+		<option value="C">Colorless</option>
+		<option value="M">Multicolored</option>
+	   </select>
+      </div>
+      
+      <button type="submit" class ="search" ">Search</button>
+    </form>
+    <div id="search-results"></div>
+
+	
+  </body>
+</html>
